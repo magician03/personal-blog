@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Diwakar&#39;s Blog</title>
+    <link>https://blog.diwakar.dev/tags/linux/</link>
+    <description>Recent content in linux on Diwakar&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.diwakar.dev/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solarized-Dark theme configuration in Terminator</title>
+      <link>https://blog.diwakar.dev/posts/2017-01-14-solarized-dark-theme-configuration-in-terminator.1/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/posts/2017-01-14-solarized-dark-theme-configuration-in-terminator.1/</guid>
+      <description>Intro Terminator is an open-source terminal emulator project with an aim to produce a useful tool for arranging terminals. You can split a window into many tabs and tabs into child terminals.
+Configuration To configure your termiantor theme to solarised-dark, you need to modify the file located at ~/.config/terminator/config in your linux system.
+Here is a preview of what it looks like when done:
+  Now to get this theme, replace the contents of ~/.</description>
+    </item>
+    
+    <item>
+      <title>Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic</title>
+      <link>https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/</guid>
+      <description>Sometimes when you are building stuff behind huge networks like universities and corporates, you often face proxy configuration issues with many applications like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on resolving these issues.
+Linux Bash With Authentication  export http_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export https_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export ftp_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; Without Authentication  export http_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export https_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export ftp_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; View Proxy  env | grep -i proxy Remove proxy  unset http_proxy unset https_proxy unset ftp_proxy //these commands disable the proxy, temporarily for that particular bash session.</description>
+    </item>
+    
+  </channel>
+</rss>

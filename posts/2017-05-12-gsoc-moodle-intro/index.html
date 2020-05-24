@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Diwakar Moturu" />
+  <meta property="og:url" content="https://blog.diwakar.dev/posts/2017-05-12-gsoc-moodle-intro/" />
+  <link rel="canonical" href="https://blog.diwakar.dev/posts/2017-05-12-gsoc-moodle-intro/" /><link rel="alternate" type="application/atom+xml" href="https://blog.diwakar.devindex.xml" title="Diwakar&#39;s Blog">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.diwakar.dev"
+      },
+      "articleSection" : "posts",
+      "name" : "GSoC\x2717 Journal: Moodle Mobile - Project Proposal",
+      "headline" : "GSoC\x2717 Journal: Moodle Mobile - Project Proposal",
+      "description" : "First of all, I would like to thank my GSoC mentor Juan Leyva, Moodle Mobile Team members Daniel Palou, Pau Ferrer for their continuous help and support, Moodle\x26rsquo;s GSoC admin David Mudrak for all the guidance.\nMoodle \x26amp; Moodle Mobile Moodle is the world largest and most loved open-source Learning Management System(LMS). Moodle Mobile is the official mobile app for Moodle which brings the browser-based services of Moodle to Mobile devices across Android and iOS.",
+      "inLanguage" : "en-US",
+      "author" : "Diwakar Moturu",
+      "creator" : "Diwakar Moturu",
+      "publisher": "Diwakar Moturu",
+      "accountablePerson" : "Diwakar Moturu",
+      "copyrightHolder" : "Diwakar Moturu",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-05-12 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2017-05-12 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/blog.diwakar.dev\/posts\/2017-05-12-gsoc-moodle-intro\/",
+      "keywords" : [ "gsoc","moodle","internship", ]
+  }
+</script>
+<title>GSoC&#39;17 Journal: Moodle Mobile - Project Proposal - Diwakar&#39;s Blog</title>
+  <meta property="og:title" content="GSoC&#39;17 Journal: Moodle Mobile - Project Proposal - Diwakar&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="First of all, I would like to thank my GSoC mentor Juan Leyva, Moodle Mobile Team members Daniel Palou, Pau Ferrer for their continuous help and support, Moodle&rsquo;s GSoC admin David Mudrak for all the guidance.
+Moodle &amp; Moodle Mobile Moodle is the world largest and most loved open-source Learning Management System(LMS). Moodle Mobile is the official mobile app for Moodle which brings the browser-based services of Moodle to Mobile devices across Android and iOS." />
+  <meta name="description" content="First of all, I would like to thank my GSoC mentor Juan Leyva, Moodle Mobile Team members Daniel Palou, Pau Ferrer for their continuous help and support, Moodle&rsquo;s GSoC admin David Mudrak for all the guidance.
+Moodle &amp; Moodle Mobile Moodle is the world largest and most loved open-source Learning Management System(LMS). Moodle Mobile is the official mobile app for Moodle which brings the browser-based services of Moodle to Mobile devices across Android and iOS." />
+  <meta property="og:locale" content="en-us" />
+
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Diwakar&#39;s Blog">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Bree+Serif" rel="stylesheet">
+  
+  
+
+  
+</head>
+
+<body>
+  <article class="post English" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Diwakar Moturu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">GSoC&#39;17 Journal: Moodle Mobile - Project Proposal</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2017-05-12 00:00:00 UTC">
+                12 May 2017
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://diwakar.dev/">@Diwakar Moturu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>First of all, I would like to thank my GSoC mentor Juan Leyva, Moodle Mobile Team members Daniel Palou, Pau Ferrer for their continuous help and support, Moodle&rsquo;s GSoC admin David Mudrak for all the guidance.</p>
+<h2 id="moodle--moodle-mobile">Moodle &amp; Moodle Mobile</h2>
+<p>Moodle is the world largest and most loved open-source Learning Management System(LMS). Moodle Mobile is the official mobile app for Moodle which brings the browser-based services of Moodle to Mobile devices across Android and iOS.</p>
+<h4 id="some-quick-stats-about-moodle--moodle-mobile">Some quick stats about Moodle &amp; Moodle Mobile</h4>
+<ul>
+<li>World largest and best Learning Management System / EdTech</li>
+<li>100 Million+ (registered) weekly active users of Core Services</li>
+<li>~10 Million downloads of Mobile App (Android &amp; iOS)</li>
+<li>234 countries, ~100 + Lang translations</li>
+<li>Open Source since 2002, kind of legacy codebase, high entry barriers for noobs to collaborate</li>
+<li>Used in Schools, Universities, Corporates, Institues, by Teachers, Students, Learners, Educators, Trainers etc</li>
+<li>Participating in GSoC since 2006</li>
+</ul>
+<h2 id="collaboration">Collaboration</h2>
+<p>My collaboration with Moodle Mobile began in December 2016 when I have sent a mail, out of blue, regarding one of the then-potential-project which I am interested to contribute. It was later dropped and Juan Leyva (Moodle Mobile Team Lead) encouraged me to look up into Mobile Tracker for other issues which would interest me. Since then I am actively contributing in Moodle Mobile and resolved some critical bugs and also added new features. Some of them are :</p>
+<ul>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-1512">MOBILE-1512</a> Add Module Prefetch Info in Context Menu for all Modules</li>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-1157">MOBILE-1157</a> Add Title, Description in all Resource Modules from Module Prefetch</li>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-1789">MOBILE-1789</a> Add Message Search functionality via WebServices</li>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-1955">MOBILE-1955</a> Increase the size &amp; padding of some icons</li>
+<li><a href="2050">MOBILE-2050</a> Modify the <code>font-size</code> of headlines in <code>.item mm-format-text</code></li>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-1843">MOBILE-1843</a> Quick fix for Dev Env Setup failure, Appium Issue</li>
+<li><a href="https://tracker.moodle.org/browse/MOBILE-2095">MOBILE-2095</a> Minor Code refactoring for sorting functionality.</li>
+</ul>
+<p>Besides these, I have also tested some issues and participated in resolving other issues. All my Moodle development activity can be viewed in my Tracker profile <a href="https://tracker.moodle.org/secure/ViewProfile.jspa?name=magician03">here</a>.</p>
+<h2 id="gsoc-project---improve-end-to-end-testing-in-the-mobile-apphttpsdocsgooglecomdocumentd1zrkzccvdpdhbihteiyk4ctnodinup-rahkclagzhb4wedituspsharing">GSoC Project - <a href="https://docs.google.com/document/d/1zRKzCcvDpdhbIhteiyk4ctNOdinup-RahKclaGZHb4w/edit?usp=sharing">Improve End-to-End Testing in the Mobile App</a></h2>
+<h4 id="project-description">Project Description</h4>
+<p>The project aims to enable the Moodle Mobile App with fully automated End-to-End testing capabilities with SauceLabs and Travis CI using latest upgraded versions of Node, Protractor, Gulp, Appium, Selenium with latest Moodle Mobile App v3.3.0 [~15/5/2017].</p>
+<p>Integrating SauceLabs and TravisCI enables a completely automated build on Travis along with End-to-End testing on SauceLabs’ Browsers, Mobile/Tablet Android Emulators, Mobile/Tablet iOS Simulators [and Real Devices exclusively for premium users]. Incase of any failure in Travis build, debugging can be easily done as SauceLabs provides the actual video and screenshot logs of all the tests for 30 days [only metadata &amp; screenshots after that] and TravisCI restores the build log for lifetime of a repository.</p>
+<h4 id="project-goals">Project Goals</h4>
+<ul>
+<li>Upgrade Node, Protractor, Gulp, Appium, Selenium and other related dependencies</li>
+<li>Configure the App for Travis build and SauceLabs testing via Travis</li>
+<li>Fix all the failing E2E tests</li>
+<li>Add E2E tests for newly added features/modules in Moodle Mobile v3.1.x, v3.2.x, v3.3.0</li>
+<li>Modify the existing documentation of Moodle Mobile Development Environment Setup and End-to-End testing environment</li>
+</ul>
+<p>Finally, I am very excited to be a part of such large organisation with global appeal and being the sole GSoC selection, a bit tensed too. However, with the very helpful, supportive Dev Team I am confident and optimistic. Looking forward for great experiences this summer 2017.</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/gsoc/">
+                GSoC
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+
+        
+        
+
+        
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="post-comments">
+          <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://magician03.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+        </div>
+        
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+  <div class="site-footer-item">
+    <a href="https://diwakar.dev" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

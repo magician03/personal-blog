@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Diwakar Moturu" />
+  <meta property="og:url" content="https://blog.diwakar.dev/posts/2016-12-20-how-to-host-portfolio-and-blog-using-github-pages-harpjs/" />
+  <link rel="canonical" href="https://blog.diwakar.dev/posts/2016-12-20-how-to-host-portfolio-and-blog-using-github-pages-harpjs/" /><link rel="alternate" type="application/atom+xml" href="https://blog.diwakar.devindex.xml" title="Diwakar&#39;s Blog">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.diwakar.dev"
+      },
+      "articleSection" : "posts",
+      "name" : "How to host Portfolio and Blog using GitHub Pages, HarpJS",
+      "headline" : "How to host Portfolio and Blog using GitHub Pages, HarpJS",
+      "description" : "When I first started Web Development, like everyone else, I also wished for an online Portfolio and super cool blog running on WordPress-like sites. But upon digging deep into it and spending some time on Web Development, I came to know about this awesome feature of GitHub, GitHub-Pages, where you can host and serve any number of static-sites for “free” with site names like username.github.io\/project-name . So why not use this free feature and host a Personal portfolio and also a blog built upon HarpJS a static-site builder built upon Node that preprocesses the blog\/anything just to HTML, CSS \x26amp; JS.",
+      "inLanguage" : "en-US",
+      "author" : "Diwakar Moturu",
+      "creator" : "Diwakar Moturu",
+      "publisher": "Diwakar Moturu",
+      "accountablePerson" : "Diwakar Moturu",
+      "copyrightHolder" : "Diwakar Moturu",
+      "copyrightYear" : "2016",
+      "datePublished": "2016-12-20 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2016-12-20 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/blog.diwakar.dev\/posts\/2016-12-20-how-to-host-portfolio-and-blog-using-github-pages-harpjs\/",
+      "keywords" : [ "development", ]
+  }
+</script>
+<title>How to host Portfolio and Blog using GitHub Pages, HarpJS - Diwakar&#39;s Blog</title>
+  <meta property="og:title" content="How to host Portfolio and Blog using GitHub Pages, HarpJS - Diwakar&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="When I first started Web Development, like everyone else, I also wished for an online Portfolio and super cool blog running on WordPress-like sites. But upon digging deep into it and spending some time on Web Development, I came to know about this awesome feature of GitHub, GitHub-Pages, where you can host and serve any number of static-sites for “free” with site names like username.github.io/project-name . So why not use this free feature and host a Personal portfolio and also a blog built upon HarpJS a static-site builder built upon Node that preprocesses the blog/anything just to HTML, CSS &amp; JS." />
+  <meta name="description" content="When I first started Web Development, like everyone else, I also wished for an online Portfolio and super cool blog running on WordPress-like sites. But upon digging deep into it and spending some time on Web Development, I came to know about this awesome feature of GitHub, GitHub-Pages, where you can host and serve any number of static-sites for “free” with site names like username.github.io/project-name . So why not use this free feature and host a Personal portfolio and also a blog built upon HarpJS a static-site builder built upon Node that preprocesses the blog/anything just to HTML, CSS &amp; JS." />
+  <meta property="og:locale" content="en-us" />
+
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Diwakar&#39;s Blog">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Bree+Serif" rel="stylesheet">
+  
+  
+
+  
+</head>
+
+<body>
+  <article class="post English" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Diwakar Moturu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">How to host Portfolio and Blog using GitHub Pages, HarpJS</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2016-12-20 00:00:00 UTC">
+                20 Dec 2016
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://diwakar.dev/">@Diwakar Moturu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>When I first started Web Development, like everyone else, I also wished for an
+online Portfolio and super cool blog running on WordPress-like sites. But upon
+digging deep into it and spending some time on Web Development, I came to know
+about this awesome feature of GitHub, <em>GitHub-Pages,</em> where you can host and
+serve any number of static-sites for “<em>free</em>” with site names like <code>username.github.io/project-name</code> . So why not
+use this free feature and host a <em>Personal portfolio</em> and also a <em>blog</em> built
+upon <em>HarpJS</em> a static-site builder built upon Node that preprocesses the
+blog/anything just to <em>HTML, CSS &amp; JS</em>.</p>
+<p><strong>ProTip</strong> : <em>Better to use <a href="https://c9.io/">Cloud9</a> online IDE for dedicated
+work space and testing</em></p>
+<h3 id="getting-started">Getting Started</h3>
+<p>First, you’ll need to install <a href="https://git-scm.com/">Git</a>,
+<a href="https://nodejs.org/en/">NodeJS</a>, <a href="https://harpjs.com/">HarpJS</a>.</p>
+<p><em>Familiarity with Git is helpful, but not a prerequisite.</em></p>
+<p>Next, head to <a href="https://github.com/">GitHub</a>, create free account and explore the
+site.</p>
+<p>Done with that ?</p>
+<p>Now, open the command prompt. If you’re not acquainted, that’s okay: it’s only
+needed sparingly. Now practice some basic syntax for Git and MarkDown( you need
+to write your blog in this ) .</p>
+<pre><code>git init    
+// initialises am empty git repository
+
+git remote -v    
+//lists out the connected URLs to Github repos
+
+git remote add origin &lt;url&gt;    
+//adds a url to existing repo on local machine
+
+git remote set-url origin &lt;url&gt; 
+// sets/ modifies the url of existing repo on local machine
+
+git clone &lt;url&gt;             
+//create a working copy of a local repository by running the command
+
+git add -A 
+//adds or stores the changes
+
+git commit -am &quot;&lt;message&gt;&quot;   
+//commit or finalise the changes
+
+git push origin master       
+//sync the change with remote-url
+</code></pre><figure>
+    <img src="https://cdn-images-1.medium.com/max/720/1*94Auz19EOBtPorAyybt9_A.jpeg"
+         alt="MarkDown CheatSheet"/> <figcaption>
+            <p>MarkDown CheatSheet</p>
+        </figcaption>
+</figure>
+
+<h3 id="github-pages--hosting">GitHub-Pages &amp; Hosting</h3>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/540/1*GCVYwFnJKmbmcgnTkGdPuA.jpeg"/> 
+</figure>
+
+<p>GitHub Pages lets you turn GitHub repositories into websites that showcase your
+portfolio, your projects, their documentation, or anything else you want to
+share with the world. What’s the advantage ? You don’t need to update your site
+every time you modify your sites’ source code. GitHub automatically does it.
+<em>“Everything just works”</em> . Check out to their video to know what exactly it
+does and why I am very much fond of it.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2MsN8gpT6jY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Ok, so you are now familiar with Git, GitHub, MarkDown, GitHub pages. Now, its
+time to dive in.</p>
+<p>Go ahead and <a href="https://github.com/new">create a new repository</a> in GitHub named
+<code>username.github.io</code>, where <code>username</code> is your username on GitHub. Repository
+should be public for publishing. Add a license of your own choice ( optional ) .</p>
+<p><figure>
+    <img src="https://cdn-images-1.medium.com/max/720/1*KdnHaz650TxADK_qdyRWug.png"/> 
+</figure>
+
+<!-- raw HTML omitted -->GitHub Repo creation<!-- raw HTML omitted --></p>
+<p>Clone the Repository to your local system</p>
+<pre><code>    git clone https://github.com/username/username.github.io
+</code></pre><p>Lets test it now, run the following commands in your Command Prompt or Terminal.</p>
+<pre><code>    cd username.github.io
+    echo &quot;Hello World&quot; &gt; index.html
+    git add --all
+    git commit -m &quot;Initial commit&quot;
+    git push -u origin master
+</code></pre><p>You’re done. As simple as that. Now wait for 5–10 minutes. Fire up your browser
+and go to</p>
+<p>Yippee, your personal site is now running Live.</p>
+<h3 id="rules--best-practices">Rules &amp; Best Practices</h3>
+<p>There are certain rules to be followed while publishing your site on
+GitHub-Pages.</p>
+<ul>
+<li>“index.html” file should be at the root of your repository</li>
+<li>Your repository should be made as public ( already done! )</li>
+<li>You can only publish static-sites on GitHub-Pages. (<a href="https://www.quora.com/What-is-the-difference-between-Static-Websites-and-Dynamic-Websites">Static vs Dynamic
+sites</a>)</li>
+</ul>
+<p>While building up your site, it would be a convenient for fellow developers to
+explore your repository if you have a good file structure. One good-olden
+convention is mentioned below.</p>
+<pre><code>
+▾ /
+  ▪ styles/
+  ▪ scripts/
+  ▪ images/
+  ▪ index.html
+  
+</code></pre><p>Make sure commit your project at various stages of development. In case you are
+not satisfied with the final output, you can revert back to earlier commits and
+start building again.</p>
+<p>Next ?</p>
+<p>Nothing, for the Portfolio.You are now well acquainted. Start brain-storming and
+build an awesome Portfolio to showcase yourself and your projects on <em>The Web.</em></p>
+<p><a href="https://magician03.github.io/">Here</a> is mine as an example.</p>
+<h3 id="portfolio-wrap-up">Portfolio Wrap up</h3>
+<p>Congratulations! You are now done with your *Portfolio <em>(</em> <em>assuming you have
+completed all the tasks <em>:)</em> and came here )</em>. <em>Try to</em> *make it visible and
+reachable from the web, link other social accounts into it. Use Facebook
+debugging tools to scrap your site and look into its suggestions.</p>
+<p>To change or update it later, at any time, you only need to change the its
+repository and changes will live soon.</p>
+<p>Next ?</p>
+<h3 id="blog-with-harpjs">Blog with HarpJS</h3>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/540/1*U1XJQeMk8_VnONAxntLhXw.png"/> 
+</figure>
+
+<p>I am pretty sure you would be wondering what is this
+<a href="https://harpjs.com/">HarpJS</a> and how does it help us in hosting our blog. Let
+me clear these things first, HarpJS is a <a href="https://davidwalsh.name/introduction-static-site-generators">static-site
+generator</a> that
+automatically preprocesses code and serves it to the browser as HTML, CSS, and
+JavaScript. Now you can focus on writing/blogging instead of wrangling.</p>
+<p>( If you are wondering why static-sites instead of wordpress and likewise
+platforms, check about it
+<a href="https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/">here</a>
+)</p>
+<p>Head on to Github and create a new repository with the name of your blog, your
+final bog will be hosted at <code>&lt;username&gt;.github.io/&lt;blogName&gt;</code>. Then ,go to settings, choose your <code>master</code> branch as
+github-pages site.</p>
+<p>I am assuming you have already installed HarpJS as suggested in <em>Getting
+Started</em> section. So, without further due, lets start building our stuff. Create
+and  to an empty folder where you want to create and <em>initialise</em> your new blog
+over. ( Use Git for version control with remote earlier created repo
+remote-url).</p>
+<pre><code>
+harp init my-harp-blog
+
+</code></pre><p>This creates a folder named <code>my-harp-blog</code>, looks as follows.</p>
+<pre><code>
+▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  
+</code></pre><p>Now, start your server locally to test it locally using</p>
+<p>And go to <code>localhost:9000</code> to look at the rudimentary version of your blog.</p>
+<h3 id="markdownhttpsharpjscomdocsdevelopmentmarkdown-layoutshttpsharpjscomdocsdevelopmentlayout-and-partialshttpsharpjscomdocsdevelopmentpartial"><a href="https://harpjs.com/docs/development/markdown">Markdown</a>, <a href="https://harpjs.com/docs/development/layout">Layouts</a> and <a href="https://harpjs.com/docs/development/partial">Partials</a></h3>
+<p>Just skim through the documentations that are hyper-linked in the paragraph
+title above, to get an idea of what exactly they are and what they do.</p>
+<p>Each Markdown file in the root directory add a new page to the blog. Go ahead
+and create an <em>About Me</em> page with contents written in markdownwith file name as <code>aboutme.md</code>
+.</p>
+<pre><code>
+# About Me
+
+Hi, I am Diwakar. I love build cool stuff that helps the world. I am currently an I.T. Undergrad Sophomore in India.
+    
+</code></pre><p>Now save your file and go to <code>localhost:9000/aboutme</code> server running. Yup, your changes are there running
+live.</p>
+<p>(* Harp does hot-reloading/ live-reloading, so you do not need to restart your
+server for every change you make.* )</p>
+<p>Layouts are used for establishing repeating structures, whether it’s a header
+and footer or something more complicated. The <code>_layout</code> file contains this markup. By
+convention, Harp doesn’t serve files or folders with an underscore preceding
+their name. Essentially, this <code>_layout.jade</code> becomes a wrapper for the files that <em>are</em>
+served.</p>
+<p>The content from your <code>about.md</code>, <code>404.jade</code> and <code>index.jade</code> are all brought into the layout wherever you use
+the variable <code>yield</code>:</p>
+<p>Now, head on to <code>_layout.jade</code> and make a template for your blog homepage. Here is an example
+:</p>
+<pre><code>
+doctype
+html
+  head
+    link(rel=&quot;stylesheet&quot;, href=&quot;/main.css&quot;)
+  body
+    != yield
+        
+</code></pre><p>( <em>The language used is <em><a href="https://github.com/pugjs/pug#pug">jade</a></em>, you can use
+HTML also, Jade feels more clearer and easier once you get acquainted and robust
+too.</em>)</p>
+<p>Notice that <code>main.css</code> is referenced, even though that file isn’t actually in the folder; <code>main.less</code>
+is. Because Harp has preprocessing built in, there’s no need to have the
+compiled files around, cluttering up your app. Update and save the LESS file,
+and your changes are already in the browser.</p>
+<h3 id="adding-articles">Adding Articles</h3>
+<p>You might want your blog to actually have some articles. Go ahead and write a
+few posts. I can wait.</p>
+<p>Now, I would like to access my first article at <code>localhost:9000/articles/another-article</code> , so I’ll create a folder called <code>articles</code>
+. Folders are for people and so are URLs; make the directory structure mirror
+the URL you want.</p>
+<pre><code>
+▾ /
+  ▪ _layout.jade
+  ▪ 404.jade
+  ▪ index.jade
+  ▪ main.less
+  ▾ articles/
+    ▪ _data.json
+    ▪ a-simple-article.md
+    ▪ another-article.md
+    
+</code></pre><p>There is nothing unexpected going on inside the articles I added, they are just
+Markdown. Information about the articles, beyond the articles themselves, is
+stored inside the <code>_data.json</code> file.</p>
+<h3 id="flexible-metadata">Flexible Metadata</h3>
+<p>Keeping metadata inside , rather than inside each individual <code>.md</code> file, works well
+for a number of reasons:</p>
+<ol>
+<li>A file can have any amount of metadata, and it still won’t interfere with your
+writing.</li>
+<li>Metadata for posts, images, videos or anything else can be added in the same
+way.</li>
+<li>Different files can still easily make use of this <code>_data.json</code>.</li>
+<li>The order of information can come from the <code>_data.json</code>, rather than requiring anything of
+the file name</li>
+</ol>
+<p>By adding the title, date, or any other information in a <code>_data.json</code> file inside the
+article itself, you can get the most out of using Markdown and just worry about
+writing.</p>
+<p>For this blog, I decided to just add the title in my <code>_data.json</code> file for now:</p>
+<pre><code>
+{
+  &quot;a-good-article&quot;: {
+    &quot;title&quot;: &quot;A Good Article&quot;
+  },
+  &quot;a-complicated-article&quot;: {
+    &quot;title&quot;: &quot;Another Article&quot;
+  }
+}
+
+</code></pre><p>Using Jade, it’s possible to iterate over this metadata, listing out all the
+articles. I’ve added the following to <code>index.jade</code>.</p>
+<pre><code>
+
+ul
+  each article, slug in public.articles._data
+    li
+      a(href=&quot;/articles/#{ slug }&quot;) #{ article.title }
+      
+</code></pre><p>As you’d expect, there’s a list of articles on the home page now.</p>
+<figure>
+    <img src="https://cdn-images-1.medium.com/max/720/0*hFs7pLOcISemox_G.png"/> 
+</figure>
+
+<p>This blog is still missing a way to navigate. It would be nice to have the nav
+in the footer as well as the header of our layout, so it’s present when someone
+reaches the bottom of an article. Harp’s <code>partial</code> function makes this possible without
+writing the same markup multiple times.</p>
+<h3 id="partials">Partials</h3>
+<p><code>Partial()</code> brings one file into another. You could use any text-based file in your
+application as a partial. Usually you’ll want to bring in snippets of code
+rather than entire pages, but you can use <code>partial()</code> for either.</p>
+<p>As with the <code>_layout</code> file, adding an underscore to the beginning of a file’s name
+prevents it from generating its own page, which is great for snippets of code.
+This convention is true for folders, too: name a folder with an underscore at
+the beginning, and nothing inside will be served directly. Folders with a
+leading underscore are a great place to store partials. I created a new folder
+called <code>_shared</code> for this purpose.</p>
+<p>Inside  is a new file named <code>nav.jade</code>.</p>
+<pre><code>
+nav
+  a(href=&quot;/&quot;) Home
+  a(href=&quot;/about&quot;) About
+  
+</code></pre><p>Now, in <code>_layout.jade</code>, I’m using this file with <code>partial()</code>:</p>
+<pre><code>
+doctype
+html
+  head
+    link(rel=&quot;stylesheet&quot;, href=&quot;/main.css&quot;)
+  body
+    != partial(&quot;_shared/nav&quot;)
+    != yield
+    footer
+      != partial(&quot;_shared/nav&quot;)
+    
+</code></pre><p>Now, the nav can go at the top and bottom of the blog posts without the markup
+needing to be duplicated. This is a simple example, but you can probably imagine
+how useful partials are once parts of your blog can be reused anywhere.</p>
+<p>Sigh !!!</p>
+<h3 id="going-live">Going live</h3>
+<p>Once the initial version of your blog is done, it’s now time to put it online.
+Any Harp can be compiled to simple HTML, CSS &amp; JavaScript files, and can be
+published anywhere.</p>
+<pre><code>
+harp compile
+
+</code></pre><p>This command generates all the required HTML, CSS &amp; JavaScript in  folder in
+your blog directory. Now copy the contents of  and put it in another folder,
+such that it contains</p>
+<ul>
+<li>index.html of <code>www</code> at root</li>
+<li>harp blog directory inside it</li>
+</ul>
+<p>Here is the sample view of directory</p>
+<pre><code>
+▾ /
+  ▪ 404.html
+  ▪ LICENSE
+  ▪ about.html
+  ▾ articles/
+    ▪  --// all articles as html pages
+  ▪ index.html
+  ▪ main.css
+  ▾ my-harp-blog/
+    ▪  --// your harp blog 
+    
+</code></pre><p><a href="https://github.com/magician03/blog/tree/gh-pages">Here</a> is the repo of my blog
+as an example.</p>
+<p>When you are done with this, now go to the <code>articles</code> folder in the root directory and edit all the html’s <code>href</code> property as shown below.</p>
+<pre><code>
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+//edit this to
+&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;/blog/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+//another example:
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/main.css&quot;&gt;
+//edit this to
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/blog/main.css&quot;&gt;
+
+Do this only for resources hosted by you, do not change the href of the ones hosted by CDNs
+
+</code></pre><p>This is because all our resources are present at <code>/blog/</code> instead of <code>/</code> for the blog. Now, any idea what is present at <code>/</code> ? Your Portfolio’s resources !!!
+Now push your to the github repo to be hosted under Github-Pages. Head on to <code>username.github.io/blogname</code></p>
+<p>( <em>To modify your blog later, you first need to modify the harp-blog folder,
+then compile it, bring the flattened HTML, CSS, JS to root, edit html files’
+href in root folder, push it</em> )</p>
+<p>That’s it. Its a wrap. You are done !!!</p>
+<p><em>Make sure to comment below your experience, any doubts or for any suggestions.</em></p>
+<p>Thanks for making it till here. Happy Coding !</p>
+<p><a href="https://medium.com/@magician03/how-to-host-portfolio-and-blog-using-github-pages-harpjs-bb301dd901ac">Here</a> is the Medium article for this post</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/development/">
+                Development
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+
+        
+        
+
+        
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="post-comments">
+          <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://magician03.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+        </div>
+        
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+  <div class="site-footer-item">
+    <a href="https://diwakar.dev" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

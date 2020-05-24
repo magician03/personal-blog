@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Diwakar&#39;s Blog</title>
-    <link>https://blog.diwakar.dev/posts/</link>
-    <description>Recent content in Posts on Diwakar&#39;s Blog</description>
+    <title>moodle on Diwakar&#39;s Blog</title>
+    <link>https://blog.diwakar.dev/tags/moodle/</link>
+    <description>Recent content in moodle on Diwakar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.diwakar.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.diwakar.dev/tags/moodle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -59,37 +59,6 @@ First Week During the first week, I was busy with my fourth semester exams and M
       <guid>https://blog.diwakar.dev/posts/2017-05-12-gsoc-moodle-intro/</guid>
       <description>First of all, I would like to thank my GSoC mentor Juan Leyva, Moodle Mobile Team members Daniel Palou, Pau Ferrer for their continuous help and support, Moodle&amp;rsquo;s GSoC admin David Mudrak for all the guidance.
 Moodle &amp;amp; Moodle Mobile Moodle is the world largest and most loved open-source Learning Management System(LMS). Moodle Mobile is the official mobile app for Moodle which brings the browser-based services of Moodle to Mobile devices across Android and iOS.</description>
-    </item>
-    
-    <item>
-      <title>Solarized-Dark theme configuration in Terminator</title>
-      <link>https://blog.diwakar.dev/posts/2017-01-14-solarized-dark-theme-configuration-in-terminator.1/</link>
-      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/posts/2017-01-14-solarized-dark-theme-configuration-in-terminator.1/</guid>
-      <description>Intro Terminator is an open-source terminal emulator project with an aim to produce a useful tool for arranging terminals. You can split a window into many tabs and tabs into child terminals.
-Configuration To configure your termiantor theme to solarised-dark, you need to modify the file located at ~/.config/terminator/config in your linux system.
-Here is a preview of what it looks like when done:
-  Now to get this theme, replace the contents of ~/.</description>
-    </item>
-    
-    <item>
-      <title>Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic</title>
-      <link>https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/</link>
-      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/</guid>
-      <description>Sometimes when you are building stuff behind huge networks like universities and corporates, you often face proxy configuration issues with many applications like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on resolving these issues.
-Linux Bash With Authentication  export http_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export https_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export ftp_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; Without Authentication  export http_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export https_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export ftp_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; View Proxy  env | grep -i proxy Remove proxy  unset http_proxy unset https_proxy unset ftp_proxy //these commands disable the proxy, temporarily for that particular bash session.</description>
-    </item>
-    
-    <item>
-      <title>How to host Portfolio and Blog using GitHub Pages, HarpJS</title>
-      <link>https://blog.diwakar.dev/posts/2016-12-20-how-to-host-portfolio-and-blog-using-github-pages-harpjs/</link>
-      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/posts/2016-12-20-how-to-host-portfolio-and-blog-using-github-pages-harpjs/</guid>
-      <description>When I first started Web Development, like everyone else, I also wished for an online Portfolio and super cool blog running on WordPress-like sites. But upon digging deep into it and spending some time on Web Development, I came to know about this awesome feature of GitHub, GitHub-Pages, where you can host and serve any number of static-sites for “free” with site names like username.github.io/project-name . So why not use this free feature and host a Personal portfolio and also a blog built upon HarpJS a static-site builder built upon Node that preprocesses the blog/anything just to HTML, CSS &amp;amp; JS.</description>
     </item>
     
   </channel>

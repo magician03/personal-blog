@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Diwakar Moturu" />
+  <meta property="og:url" content="https://blog.diwakar.dev/posts/2017-06-28-gsoc-moodle-phase-1/" />
+  <link rel="canonical" href="https://blog.diwakar.dev/posts/2017-06-28-gsoc-moodle-phase-1/" /><link rel="alternate" type="application/atom+xml" href="https://blog.diwakar.devindex.xml" title="Diwakar&#39;s Blog">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.diwakar.dev"
+      },
+      "articleSection" : "posts",
+      "name" : "GSoC’17 Journal: Phase 1",
+      "headline" : "GSoC’17 Journal: Phase 1",
+      "description" : "With Phase 1 of GSoC\x2717 completed, it\x26rsquo;s now time to outline the work done during this period. Phase 1 has started on 30th May and ended on 26th June, approximately 3 weeks.\nPage Object Library The page object library which is used to interact with the web page and test it was outdated. It is now updated with latest protractor features like ExpectedConditions , wait, sleep etc. This helped the testing in many ways, especially, as the app totally depends on Web Services calls and heavy Ionic and Angular rendering, it takes uncertain times to load the web pages.",
+      "inLanguage" : "en-US",
+      "author" : "Diwakar Moturu",
+      "creator" : "Diwakar Moturu",
+      "publisher": "Diwakar Moturu",
+      "accountablePerson" : "Diwakar Moturu",
+      "copyrightHolder" : "Diwakar Moturu",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-06-28 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2017-06-28 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/blog.diwakar.dev\/posts\/2017-06-28-gsoc-moodle-phase-1\/",
+      "keywords" : [ "gsoc","moodle","internship", ]
+  }
+</script>
+<title>GSoC’17 Journal: Phase 1 - Diwakar&#39;s Blog</title>
+  <meta property="og:title" content="GSoC’17 Journal: Phase 1 - Diwakar&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="With Phase 1 of GSoC&#39;17 completed, it&rsquo;s now time to outline the work done during this period. Phase 1 has started on 30th May and ended on 26th June, approximately 3 weeks.
+Page Object Library The page object library which is used to interact with the web page and test it was outdated. It is now updated with latest protractor features like ExpectedConditions , wait, sleep etc. This helped the testing in many ways, especially, as the app totally depends on Web Services calls and heavy Ionic and Angular rendering, it takes uncertain times to load the web pages." />
+  <meta name="description" content="With Phase 1 of GSoC&#39;17 completed, it&rsquo;s now time to outline the work done during this period. Phase 1 has started on 30th May and ended on 26th June, approximately 3 weeks.
+Page Object Library The page object library which is used to interact with the web page and test it was outdated. It is now updated with latest protractor features like ExpectedConditions , wait, sleep etc. This helped the testing in many ways, especially, as the app totally depends on Web Services calls and heavy Ionic and Angular rendering, it takes uncertain times to load the web pages." />
+  <meta property="og:locale" content="en-us" />
+
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Diwakar&#39;s Blog">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Bree+Serif" rel="stylesheet">
+  
+  
+
+  
+</head>
+
+<body>
+  <article class="post English" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Diwakar Moturu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">GSoC’17 Journal: Phase 1</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2017-06-28 00:00:00 UTC">
+                28 Jun 2017
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://diwakar.dev/">@Diwakar Moturu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>With Phase 1 of GSoC'17 completed, it&rsquo;s now time to outline the work done during this period. Phase 1 has started on 30th May and ended on 26th June, approximately 3 weeks.</p>
+<h3 id="page-object-library">Page Object Library</h3>
+<p>The page object library which is used to interact with the web page and test it was outdated. It is now updated with latest protractor features like <code>ExpectedConditions</code> , <code>wait</code>, <code>sleep</code> etc. This helped the testing in many ways, especially, as the app totally depends on Web Services calls and heavy Ionic and Angular rendering, it takes uncertain times to load the web pages. With the new improved library these problems are addressed well.</p>
+<h3 id="karma-unit-tests">Karma Unit Tests</h3>
+<p>Karma Unit tests which are written for premature version of the App are currently outdated and might be misleading for beginner contributors. Since there are no plans to add Unit Tests any time soon, they are safely removed along with its related karma dependencies.</p>
+<h3 id="travis-sauce-protractor-config-files">Travis-Sauce-Protractor Config files</h3>
+<p>Configuration files for Travis-Sauce-Protractor are written for Browser, Android, iOS. Android, iOS are to be via local machine with few number of tests at a time(as suace emulators, devices aren&rsquo;t restarting well often and are quite inconsistent). Browsers however work well and are relatively consistent with performance, so E2E testing is done SauceLabs via Travis. The Travis .yaml file is also updated accordingly and seprate config files are created for each purposes.</p>
+<h3 id="correction-of-e2e-test-suites">Correction of E2E Test Suites</h3>
+<p>E2E tests which are present earlier are incorrect and are failing(thereby failing the Travis build). Also, there is a new course in the demo site &lsquo;Digital Literacy&rsquo; added by MoodleHQ Team to exclusively test Mobile App features. So, all the course-specific tests are now corrected and migrated to that course. All other tests are also now corrected and passing the Travis build.</p>
+<p>Here is the list of test-suites corrected :</p>
+<ul>
+<li><code>files.spec.js</code></li>
+<li><code>notes.spec.js</code></li>
+<li><code>calendar.spec.js</code></li>
+<li><code>contacts.spec.js</code></li>
+<li><code>participants.spec.js</code></li>
+<li><code>notification.spec.js</code></li>
+<li><code>coursecompletion.spec.js</code></li>
+<li><code>teacher_participation.spec.js</code></li>
+<li><code>label.spec.js</code></li>
+<li><code>login.spec.js</code></li>
+<li><code>survey.spec.js</code></li>
+<li><code>grades.spec.js</code></li>
+<li><code>courses.spec.js</code></li>
+<li><code>teacher_new_staff_induction_course.spec.js</code></li>
+<li><code>mod_book.spec.js</code></li>
+<li><code>mod_chat.spec.js</code></li>
+<li><code>resource.spec.js</code></li>
+<li><code>mod_wiki.spec.js</code></li>
+<li><code>settings.spec.js</code></li>
+<li><code>quiz.spec.js</code></li>
+<li><code>mod_forum.spec.js</code></li>
+<li><code>mod_assign.spec.js</code></li>
+<li><code>mod_choice.spec.js</code></li>
+<li><code>mod_folder.spec.js</code></li>
+<li><code>mod_glossary.spec.js</code></li>
+<li><code>teacher_course.spec.js</code></li>
+<li><code>teacher_grades.spec.js</code></li>
+<li><code>course_contents.spec.js</code></li>
+<li><code>course_filtering.spec.js</code></li>
+</ul>
+<h3 id="few-related-links-">Few related links :</h3>
+<ul>
+<li><a href="https://github.com/magician03/moodlemobile2/tree/gsoc2017">Git branch for the GSoC'17 work</a></li>
+<li><a href="https://travis-ci.org/magician03/moodlemobile2/builds">Travis Build History for MoodleMobile2 Build &amp; Testing</a></li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/gsoc/">
+                GSoC
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+
+        
+        
+
+<div class="releated-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/2017-05-24-gsoc-moodle-community-bonding/">GSoC’17 Journal: Community Bonding Period</a></li>
+    
+    <li><a href="/posts/2017-05-12-gsoc-moodle-intro/">GSoC&#39;17 Journal: Moodle Mobile - Project Proposal</a></li>
+    
+  </ul>
+</div>
+
+        
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="post-comments">
+          <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://magician03.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+        </div>
+        
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+  <div class="site-footer-item">
+    <a href="https://diwakar.dev" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

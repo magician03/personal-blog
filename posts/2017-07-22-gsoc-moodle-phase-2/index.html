@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Diwakar Moturu" />
+  <meta property="og:url" content="https://blog.diwakar.dev/posts/2017-07-22-gsoc-moodle-phase-2/" />
+  <link rel="canonical" href="https://blog.diwakar.dev/posts/2017-07-22-gsoc-moodle-phase-2/" /><link rel="alternate" type="application/atom+xml" href="https://blog.diwakar.devindex.xml" title="Diwakar&#39;s Blog">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.diwakar.dev"
+      },
+      "articleSection" : "posts",
+      "name" : "GSoC’17 Journal: Phase 2",
+      "headline" : "GSoC’17 Journal: Phase 2",
+      "description" : "With Phase 2 of GSoC\x2717 about to end, it\x26rsquo;s time to recapitulate the work done during this period. Phase 2 has started on 30th June and ends on 24th July, approximately 3 weeks.\nTravis build optmization With increasing number of tests the Travis build is timing out (50 min hard timeout) and this became main problem. The entire Travis Build process is then reconfigured, now it uses job matrix with 7 jobs.",
+      "inLanguage" : "en-US",
+      "author" : "Diwakar Moturu",
+      "creator" : "Diwakar Moturu",
+      "publisher": "Diwakar Moturu",
+      "accountablePerson" : "Diwakar Moturu",
+      "copyrightHolder" : "Diwakar Moturu",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-07-22 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2017-07-22 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/blog.diwakar.dev\/posts\/2017-07-22-gsoc-moodle-phase-2\/",
+      "keywords" : [ "gsoc","moodle","internship", ]
+  }
+</script>
+<title>GSoC’17 Journal: Phase 2 - Diwakar&#39;s Blog</title>
+  <meta property="og:title" content="GSoC’17 Journal: Phase 2 - Diwakar&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="With Phase 2 of GSoC&#39;17 about to end, it&rsquo;s time to recapitulate the work done during this period. Phase 2 has started on 30th June and ends on 24th July, approximately 3 weeks.
+Travis build optmization With increasing number of tests the Travis build is timing out (50 min hard timeout) and this became main problem. The entire Travis Build process is then reconfigured, now it uses job matrix with 7 jobs." />
+  <meta name="description" content="With Phase 2 of GSoC&#39;17 about to end, it&rsquo;s time to recapitulate the work done during this period. Phase 2 has started on 30th June and ends on 24th July, approximately 3 weeks.
+Travis build optmization With increasing number of tests the Travis build is timing out (50 min hard timeout) and this became main problem. The entire Travis Build process is then reconfigured, now it uses job matrix with 7 jobs." />
+  <meta property="og:locale" content="en-us" />
+
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Diwakar&#39;s Blog">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Bree+Serif" rel="stylesheet">
+  
+  
+
+  
+</head>
+
+<body>
+  <article class="post English" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Diwakar Moturu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">GSoC’17 Journal: Phase 2</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2017-07-22 00:00:00 UTC">
+                22 Jul 2017
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://diwakar.dev/">@Diwakar Moturu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>With Phase 2 of GSoC'17 about to end, it&rsquo;s time to recapitulate the work done during this period. Phase 2 has started on 30th June and ends on 24th July, approximately 3 weeks.</p>
+<h3 id="travis-build-optmization">Travis build optmization</h3>
+<p>With increasing number of tests the Travis build is timing out (50 min hard timeout) and this became main problem. The entire Travis Build process is then reconfigured, now it uses job matrix with 7 jobs. Each job is taking ~30-40 min to complete. The Node packages are also now cached in the build. This effectively reduces the enviroment setup internally inside Travis by 5 min for each job(quite valuable!).</p>
+<h3 id="e2e-documentation-draft">E2E Documentation draft</h3>
+<p>Existing documentation for E2E testing is outdated. The new improved Documentation is drafted and is 80% done. It now allows users to perform the E2E testing in the 3 different setups. The official Moodle Docs will be updated in Final Phase.</p>
+<h3 id="improved-testsuites">Improved TestSuites</h3>
+<p>Some tests which can be easily improved/optimised are updated.All the tests are now working w.r.t integration branch(up-to-date Mobile Team development workflow). Rest will be improved in Final Phase.</p>
+<h3 id="new-testsuites">New TestSuites</h3>
+<p>New TestSuites have been added to test new functionalities of the App. Lesson, Feedback, Database, User profiles, CourseOverview and other resource modules are few of these.</p>
+<h3 id="progress-recap">Progress Recap</h3>
+<h4 id="work-done-to-date">Work done to date</h4>
+<ul>
+<li>All the existing test suites are corrected</li>
+<li>New test suites for new activities/features have been added</li>
+<li>All are passing in Travis CI and SauceLabs browsers</li>
+<li>E2E documentation is 80% done</li>
+<li>Travis build greatly optimised by generating build matrix (7 jobs currently) and caching the node packages</li>
+</ul>
+<h4 id="yet-to-do">Yet to do</h4>
+<ul>
+<li>Minor updates &amp; Publish the documentation</li>
+<li>Update the test suites to test new features in various activities and other new features</li>
+</ul>
+<h3 id="current-stats">Current Stats</h3>
+<ul>
+<li>143 E2E Tests</li>
+<li>36 Test Suites</li>
+<li>3hr 45min of actual Travis Build/Test time</li>
+<li>40 min Travis Build/Test time after optimization</li>
+<li>7 Travis jobs</li>
+<li>39 Git commits</li>
+</ul>
+<h3 id="few-related-links">Few related Links</h3>
+<ul>
+<li><a href="https://github.com/magician03/moodlemobile2/tree/gsoc2017">Git branch for the GSoC'17 work</a></li>
+<li><a href="https://travis-ci.org/magician03/moodlemobile2/builds">Travis Build History for MoodleMobile2 Build &amp; Testing</a></li>
+<li><a href="https://docs.google.com/document/d/1H7nQVvkYySftJX16dycBNdoK1xFRQN0MUsnvzUv6eJc/edit?usp=sharing">E2E Documentation draft</a></li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/gsoc/">
+                GSoC
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+
+        
+        
+
+<div class="releated-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/posts/2017-06-28-gsoc-moodle-phase-1/">GSoC’17 Journal: Phase 1</a></li>
+    
+    <li><a href="/posts/2017-05-24-gsoc-moodle-community-bonding/">GSoC’17 Journal: Community Bonding Period</a></li>
+    
+    <li><a href="/posts/2017-05-12-gsoc-moodle-intro/">GSoC&#39;17 Journal: Moodle Mobile - Project Proposal</a></li>
+    
+  </ul>
+</div>
+
+        
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="post-comments">
+          <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://magician03.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+        </div>
+        
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+  <div class="site-footer-item">
+    <a href="https://diwakar.dev" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

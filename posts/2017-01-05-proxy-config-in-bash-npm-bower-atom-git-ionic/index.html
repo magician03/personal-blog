@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Diwakar Moturu" />
+  <meta property="og:url" content="https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/" />
+  <link rel="canonical" href="https://blog.diwakar.dev/posts/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic/" /><link rel="alternate" type="application/atom+xml" href="https://blog.diwakar.devindex.xml" title="Diwakar&#39;s Blog">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/blog.diwakar.dev"
+      },
+      "articleSection" : "posts",
+      "name" : "Proxy config in Bash, NPM, Bower, Atom, Git \x26 Ionic",
+      "headline" : "Proxy config in Bash, NPM, Bower, Atom, Git \x26 Ionic",
+      "description" : "Sometimes when you are building stuff behind huge networks like universities and corporates, you often face proxy configuration issues with many applications like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on resolving these issues.\nLinux Bash With Authentication  export http_proxy=\x27http:\/\/username:password@[Your Proxy]:[Proxy Port]\/\x27 export https_proxy=\x27http:\/\/username:password@[Your Proxy]:[Proxy Port]\/\x27 export ftp_proxy=\x27http:\/\/username:password@[Your Proxy]:[Proxy Port]\/\x27 Without Authentication  export http_proxy=\x27http:\/\/[Your Proxy]:[Proxy Port]\x27 export https_proxy=\x27http:\/\/[Your Proxy]:[Proxy Port]\x27 export ftp_proxy=\x27http:\/\/[Your Proxy]:[Proxy Port]\x27 View Proxy  env | grep -i proxy Remove proxy  unset http_proxy unset https_proxy unset ftp_proxy \/\/these commands disable the proxy, temporarily for that particular bash session.",
+      "inLanguage" : "en-US",
+      "author" : "Diwakar Moturu",
+      "creator" : "Diwakar Moturu",
+      "publisher": "Diwakar Moturu",
+      "accountablePerson" : "Diwakar Moturu",
+      "copyrightHolder" : "Diwakar Moturu",
+      "copyrightYear" : "2017",
+      "datePublished": "2017-01-05 00:00:00 \x2b0000 UTC",
+      "dateModified" : "2017-01-05 00:00:00 \x2b0000 UTC",
+      "url" : "https:\/\/blog.diwakar.dev\/posts\/2017-01-05-proxy-config-in-bash-npm-bower-atom-git-ionic\/",
+      "keywords" : [ "linux", ]
+  }
+</script>
+<title>Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic - Diwakar&#39;s Blog</title>
+  <meta property="og:title" content="Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic - Diwakar&#39;s Blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Sometimes when you are building stuff behind huge networks like universities and corporates, you often face proxy configuration issues with many applications like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on resolving these issues.
+Linux Bash With Authentication  export http_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export https_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export ftp_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; Without Authentication  export http_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export https_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export ftp_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; View Proxy  env | grep -i proxy Remove proxy  unset http_proxy unset https_proxy unset ftp_proxy //these commands disable the proxy, temporarily for that particular bash session." />
+  <meta name="description" content="Sometimes when you are building stuff behind huge networks like universities and corporates, you often face proxy configuration issues with many applications like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on resolving these issues.
+Linux Bash With Authentication  export http_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export https_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; export ftp_proxy=&#39;http://username:password@[Your Proxy]:[Proxy Port]/&#39; Without Authentication  export http_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export https_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; export ftp_proxy=&#39;http://[Your Proxy]:[Proxy Port]&#39; View Proxy  env | grep -i proxy Remove proxy  unset http_proxy unset https_proxy unset ftp_proxy //these commands disable the proxy, temporarily for that particular bash session." />
+  <meta property="og:locale" content="en-us" />
+
+  <link rel="stylesheet" href="/css/flexboxgrid-6.3.1.min.css" />
+  <link rel="stylesheet" href="/css/github-markdown.css" />
+  <link rel="stylesheet" href="/css/highlight/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Diwakar&#39;s Blog">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Bree+Serif" rel="stylesheet">
+  
+  
+
+  
+</head>
+
+<body>
+  <article class="post English" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">Diwakar Moturu</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Proxy config in Bash, NPM, Bower, Atom, Git &amp; Ionic</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2017-01-05 00:00:00 UTC">
+                05 Jan 2017
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://diwakar.dev/">@Diwakar Moturu</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>Sometimes when you are building stuff behind huge networks like universities and
+corporates, you often face proxy configuration issues with many applications
+like NPM, Bower, Ionic, Git, Atom and Linux Bash itself. This article focuses on
+resolving these issues.</p>
+<h3 id="linux-bash">Linux Bash</h3>
+<h5 id="with-authentication">With Authentication</h5>
+<pre><code>
+export http_proxy='http://username:password@[Your Proxy]:[Proxy Port]/'    
+export https_proxy='http://username:password@[Your Proxy]:[Proxy Port]/'
+export ftp_proxy='http://username:password@[Your Proxy]:[Proxy Port]/'
+
+</code></pre><h5 id="without-authentication">Without Authentication</h5>
+<pre><code>
+export http_proxy='http://[Your Proxy]:[Proxy Port]'    
+export https_proxy='http://[Your Proxy]:[Proxy Port]'
+export ftp_proxy='http://[Your Proxy]:[Proxy Port]'
+
+</code></pre><h5 id="view-proxy">View Proxy</h5>
+<pre><code>
+env | grep -i proxy
+
+</code></pre><h5 id="remove-proxy">Remove proxy</h5>
+<pre><code>
+unset http_proxy
+unset https_proxy
+unset ftp_proxy
+//these commands disable the proxy, temporarily for that particular bash session.
+
+</code></pre><h3 id="npm">NPM</h3>
+<h5 id="with-authentication-1">With Authentication</h5>
+<pre><code>
+npm config set proxy &quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+npm config set https-proxy &quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+
+</code></pre><h5 id="without-authentication-1">Without Authentication</h5>
+<pre><code>
+npm config set https-proxy http://[Your Proxy]:[Proxy Port]
+npm config set proxy http://[Your Proxy]:[Proxy Port]
+
+</code></pre><h5 id="view-proxy-1">View Proxy</h5>
+<pre><code>
+npm config get https-proxy
+npm config get proxy
+
+</code></pre><h5 id="remove-proxy-1">Remove proxy</h5>
+<pre><code>
+npm config delete https-proxy
+npm config delete proxy
+
+//or
+
+npm config set https-proxy null
+npm config set proxy null
+
+</code></pre><h3 id="bower">Bower</h3>
+<h5 id="with-authentication-2">With Authentication</h5>
+<pre><code>
+//add the lines to `.bowerrc`
+&quot;proxy&quot;:&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+&quot;https-proxy&quot;:&quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+
+</code></pre><h5 id="without-authentication-2">Without Authentication</h5>
+<pre><code>
+// add the lines to `.bowerrc`
+&quot;proxy&quot;:&quot;http://[Your Proxy]:[Proxy Port]&quot;
+&quot;https-proxy&quot;:&quot;http://[Your Proxy]:[Proxy Port]&quot;
+
+</code></pre><h5 id="view-proxy-2">View Proxy</h5>
+<pre><code>
+cat .bowerrc
+
+</code></pre><h5 id="remove-proxy-2">Remove proxy</h5>
+<pre><code>
+// edit and remove the lines from `.bowerrc` added earlier
+
+</code></pre><h3 id="atom">Atom</h3>
+<h5 id="with-authentication-3">With Authentication</h5>
+<pre><code>
+apm config set proxy &quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+apm config set https-proxy &quot;http://username:password@[Your Proxy]:[Proxy Port]/&quot;
+
+</code></pre><h5 id="without-authentication-3">Without Authentication</h5>
+<pre><code>
+apm config set https-proxy http://[Your Proxy]:[Proxy Port]
+apm config set proxy http://[Your Proxy]:[Proxy Port]
+
+</code></pre><h5 id="view-proxy-3">View Proxy</h5>
+<pre><code>
+apm config get https-proxy
+apm config get proxy
+
+</code></pre><h5 id="remove-proxy-3">Remove proxy</h5>
+<pre><code>
+apm config delete https-proxy
+apm config delete proxy
+
+//or
+
+apm config set https-proxy null
+apm config set proxy null
+
+</code></pre><h3 id="git">Git</h3>
+<h5 id="with-authentication-4">With Authentication</h5>
+<pre><code>
+git config --add http.proxy &quot;http://username:password@[YourProxy]:[ProxyPort]/&quot;
+git config --add https.proxy &quot;http://username:password@[YourProxy]:[ProxyPort]/&quot;
+
+</code></pre><h5 id="without-authentication-4">Without Authentication</h5>
+<pre><code>
+git config --add http.proxy http://[YourProxy]:[ProxyPort]
+git config --add https.proxy http://[YourProxy]:[ProxyPort]
+
+</code></pre><h5 id="view-proxy-4">View Proxy</h5>
+<pre><code>
+git config --get http.proxy
+git config --get https.proxy
+
+</code></pre><h5 id="remove-proxy-4">Remove proxy</h5>
+<pre><code>
+git config --unset http.proxy
+git config --unset https.proxy
+
+</code></pre><h3 id="ionic">Ionic</h3>
+<h5 id="with-authentication-5">With Authentication</h5>
+<pre><code>
+//You can add proxy along with the a particular serve
+PROXY=&quot;http://username:password@[YourProxy]:[ProxyPort]/&quot; ionic start [your app]
+
+</code></pre><h5 id="without-authentication-5">Without Authentication</h5>
+<pre><code>
+//You can add proxy along with the a particular serve
+PROXY=http://[Your Proxy]:[Proxy Port] ionic start [your app]
+
+</code></pre><p><em>This post will be updated regularly with changes in configurations and new frameworks.</em></p>
+<p><em>Comment below for any suggestions and framework/language requests.</em></p>
+<p><a href="https://medium.com/@magician03/proxy-config-in-bash-npm-bower-atom-git-ionic-56b545b76a6d">Here</a> is the Medium article for this post.</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-category">
+              <a href="/categories/linux/">
+                Linux
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+
+        
+        
+
+        
+        
+        <div style="height: 50px;"></div>
+        
+        <div class="post-comments">
+          <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://magician03.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+        </div>
+        
+        
+
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+  <div class="site-footer-item">
+    <a href="https://diwakar.dev" target="_blank">About</a>
+  </div>
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

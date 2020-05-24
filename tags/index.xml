@@ -6,62 +6,53 @@
     <description>Recent content in Tags on Diwakar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.diwakar.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>gsoc</title>
+      <link>https://blog.diwakar.dev/tags/gsoc/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internship</title>
+      <link>https://blog.diwakar.dev/tags/internship/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/tags/internship/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>moodle</title>
+      <link>https://blog.diwakar.dev/tags/moodle/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/tags/moodle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://blog.diwakar.dev/tags/linux/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.diwakar.dev/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>development</title>
       <link>https://blog.diwakar.dev/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://blog.diwakar.dev/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>https://blog.diwakar.dev/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://blog.diwakar.dev/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://blog.diwakar.dev/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>https://blog.diwakar.dev/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://blog.diwakar.dev/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.diwakar.dev/tags/themes/</guid>
       <description></description>
     </item>
     
