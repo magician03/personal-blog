@@ -17,8 +17,8 @@
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.diwakar.dev/posts/2017-08-21-gsoc-moodle-final-phase-copy/</guid>
-      <description>Update - 6th September Project has been evaluated and approved by mentor resulting in successful GSoC completion. Extremely thankful and appreciative of Juan Leyva for the support and mentorship over last 4-5 months and entire Moodle Mobile team for regular feedback and Google for sponsoring this amazing collaboration.
-Google Summer of Code 2017 Development Period is about to conclude in next few days. Final phase has started on 28th July and ends on 21st August, approximately 3 weeks, and Student Work Product Submissions are due by 29th August.</description>
+      <description>Google Summer of Code 2017 Development Period is about to conclude in next few days. Final phase has started on 28th July and ends on 21st August, approximately 3 weeks, and Student Work Product Submissions are due by 29th August.
+E2E Documentation Documentation for MoodleMobile End-to-End testing is done and published on Official Moodle Docs. It explains the E2E Testing of MoodleMobileApp in three different testing environments - on SauceLabs via Travis, on SauceLabs via Local Machine, on Local Machine.</description>
     </item>
     
     <item>
