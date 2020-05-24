@@ -1,0 +1,28 @@
+baseURL = "https://blog.diwakar.dev"
+languageCode = "en-us"
+title = "Diwakar's Blog"
+theme = "yinyang"
+DefaultContentLanguage = "en"
+
+[author]
+  name = "Diwakar Moturu"
+  homepage = "https://joway.io/"
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+
+[params]
+disqus = "magician03" # disqus account name
+extraHead = ''
+mainSections = ["posts"]
+
+[[params.socials]]
+name = "RSS"
+link = "/index.xml"
+
+[[params.socials]]
+name = "About"
+link = "https://joway.io"
